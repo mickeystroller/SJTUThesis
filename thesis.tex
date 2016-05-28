@@ -4,8 +4,8 @@
 %%==================================================
 
 % 双面打印
-\documentclass[doctor, fontset=adobe, openright, twoside, zihao=-4]{sjtuthesis}
-% \documentclass[bachelor, fontset=adobe, openany, oneside, zihao=-4, submit]{sjtuthesis} 
+%\documentclass[doctor, fontset=adobe, openright, twoside, zihao=-4]{sjtuthesis}
+ \documentclass[bachelor, fontset=adobe, openany, oneside, zihao=-4, submit]{sjtuthesis} 
 % \documentclass[master, adobefonts, review]{sjtuthesis} 
 % \documentclass[%
 %   bachelor|master|doctor,	% 必选项
@@ -18,7 +18,7 @@
 % ]
 
 % 逐个导入参考文献数据库
-\addbibresource{bib/thesis.bib}
+\addbibresource{thesis.bib}
 % \addbibresource{bib/chap2.bib}
 
 \begin{document}
@@ -27,19 +27,19 @@
 \include{tex/id}
 \maketitle
 
-\makeenglishtitle
-
-\makeatletter
-\ifsjtu@submit\relax
-	\includepdf{pdf/original.pdf}
-	\cleardoublepage
-	\includepdf{pdf/authorization.pdf}
-	\cleardoublepage
-\else
-	\makeDeclareOriginal
-	\makeDeclareAuthorization
-\fi
-\makeatother
+%\makeenglishtitle
+%
+%\makeatletter
+%\ifsjtu@submit\relax
+%	\includepdf{pdf/original.pdf}
+%	\cleardoublepage
+%	\includepdf{pdf/authorization.pdf}
+%	\cleardoublepage
+%\else
+%	\makeDeclareOriginal
+%	\makeDeclareAuthorization
+%\fi
+%\makeatother
 
 
 \frontmatter 	% 使用罗马数字对前言编号
@@ -63,9 +63,9 @@
 
 %% 正文内容
 \pagestyle{main}
-\include{tex/intro}
-\include{tex/example}
-\include{tex/faq}
+%\include{tex/intro}
+%\include{tex/example}
+%\include{tex/faq}
 \include{tex/summary}
 
 \appendix	% 使用英文字母对附录编号，重新定义附录中的公式、图图表编号样式
@@ -75,10 +75,10 @@
 \renewcommand\thealgorithm{\Alph{chapter}--\arabic{algorithm}}
 
 %% 附录内容，本科学位论文可以用翻译的文献替代。
-\include{tex/app_setup}
-\include{tex/app_eq}
-\include{tex/app_cjk}
-\include{tex/app_log}
+%\include{tex/app_setup}
+%\include{tex/app_eq}
+%\include{tex/app_cjk}
+%\include{tex/app_log}
 
 \backmatter	% 文后无编号部分 
 
@@ -99,13 +99,13 @@
 \fi
 
 % 盲审论文中，发表学术论文及参与科研情况等仅以第几作者注明即可，不要出现作者或他人姓名
-\ifsjtu@review\relax
-  \include{tex/pubreview}
-  \include{tex/projectsreview}  
-\else
-  \include{tex/pub}	      %% 发表论文
-  \include{tex/projects}  %% 参与的项目
-\fi
+%\ifsjtu@review\relax
+%  \include{tex/pubreview}
+%  \include{tex/projectsreview}  
+%\else
+%  \include{tex/pub}	      %% 发表论文
+%  \include{tex/projects}  %% 参与的项目
+%\fi
 
 % \include{tex/patents}	  %% 申请专利
 % \include{tex/resume}	  %% 个人简历

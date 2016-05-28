@@ -2,6 +2,18 @@
 
 SJTUThesis is an *unofficial* XeLaTeX template for preparing bachelor, master, or doctor thesis in Shanghai Jiao Tong University.
 
+
+
+#修改说明
+
+1. 本模板主要针对本科毕设用英文撰写的论文。
+2. 当前alpha版本主要将ctexbook中各类默认的中文部分修改为英文，并且添加了首页封面。
+3. 此版本为alpha测试版本，不少字体字号仍未修改完成，细节之处仍需完善，希望大家可以积极contribute。
+4. 在sjtuthesis.cfg和tex/id.tex中修改封面页以及标题信息
+
+Mac OS下配合Textlive 2015测试通过
+
+
 # 上海交通大学学位论文模板
 
 
