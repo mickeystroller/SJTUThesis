@@ -10,6 +10,8 @@ SJTUThesis is an *unofficial* XeLaTeX template for preparing bachelor, master, o
 2. 当前alpha版本主要将ctexbook中各类默认的中文部分修改为英文，并且添加了首页封面。
 3. 此版本为alpha测试版本，不少字体字号仍未修改完成，细节之处仍需完善，希望大家可以积极contribute。
 4. 在sjtuthesis.cfg和tex/id.tex中修改封面页以及标题信息
+5. 关于加reference的，在cls文件第68，69行，我backend选择了用bibtex，之后在bib/thesis.bib下添加应用，打开thesis.tex, xelatex编译一遍，**直接对thesis.tex用bibtex编译一遍**, 再用xelatex对thesis.tex**编译两遍**，生成引用列表。
+
 
 Mac OS下配合Textlive 2015测试通过
 
