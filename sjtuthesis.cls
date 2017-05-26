@@ -446,8 +446,8 @@
     \def\tabcolsep{1pt}
     \def\arraystretch{1}
     \begin{tabular}{lc}
-      \kaishu{\sjtu@label@studentname} &\kaishu
-      \sjtuunderline[250pt]{\sjtu@value@studentname}
+      \kaishu{\sjtu@label@author} &\kaishu
+      \sjtuunderline[250pt]{\sjtu@value@author}
     \\
       \kaishu{\sjtu@label@studentnumber} &\kaishu
       \sjtuunderline[250pt]{\sjtu@value@studentnumber}
@@ -458,8 +458,8 @@
       \kaishu{\sjtu@label@advisor} &\kaishu
       \sjtuunderline[250pt]{\sjtu@value@advisor}
     \\  
-      \kaishu{\sjtu@label@institution} &\kaishu
-      \sjtuunderline[250pt]{\sjtu@value@institution}
+      \kaishu{\sjtu@label@institute} &\kaishu
+      \sjtuunderline[250pt]{\sjtu@value@institute}
     \end{tabular}
   \end{center}
   \vskip \stretch{0.5}
